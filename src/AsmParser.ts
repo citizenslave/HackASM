@@ -16,7 +16,7 @@ export class AsmParser {
   parse(): string {
     const lines = this.asmData.split('\n').filter(l => l.trim() && !l.trim().startsWith('//'));
 
-    const parsedLines = this.extractLabels(lines).map((l, idx) => this.parseLine(l, idx));
+    const parsedLines = this.extractLabels(lines).map((l) => this.parseLine(l));
 
     return parsedLines.join('\n');
   }
@@ -36,7 +36,7 @@ export class AsmParser {
     return linesWithoutLabels;
   }
 
-  parseLine(line: string, idx: number): string {
+  parseLine(line: string): string {
     const aCmdPattern = /@(\S+)/;
 
     const strippedComments = line.split('//')[0];
