@@ -45,7 +45,7 @@ export const cmdMap = {
   'D|M': 0b1010101
 };
 
-const defaultSymbols = {
+export const defaultSymbols = {
   'R0': 0x0000,
   'R1': 0x0001,
   'R2': 0x0002,
@@ -57,11 +57,17 @@ const defaultSymbols = {
   'R8': 0x0008,
   'R9': 0x0009,
   'R10': 0x000A,
+  'RA': 0x000A,
   'R11': 0x000B,
+  'RB': 0x000B,
   'R12': 0x000C,
+  'RC': 0x000C,
   'R13': 0x000D,
+  'RD': 0x000D,
   'R14': 0x000E,
+  'RE': 0x000E,
   'R15': 0x000F,
+  'RF': 0x000F,
   'SP': 0x0000,
   'LCL': 0x0001,
   'ARG': 0x0002,
