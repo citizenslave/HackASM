@@ -2,8 +2,9 @@
   "name": "assembler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   }
 }
